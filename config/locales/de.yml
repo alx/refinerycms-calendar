@@ -1,0 +1,45 @@
+de:
+  shared:
+    admin:
+      image_picker:
+        image: Bild
+  plugins:
+    calendar:
+      title: Events
+  admin:
+    events:
+      index:
+        title: Events
+        create_new: Neues Event
+        reorder: Events neu anordnen
+        reorder_done: Events neu angeordnet
+        sorry_no_results: Keine Ergebnisse gefunden.
+        no_items_yet: Es gibt derzeit keine Events. Kicke auf "Neues Event" um das erste hinzuzufügen.
+        manage_categories: Kategorien verwalten
+      event:
+        view_live_html: Dieses Event ansehen <br/><em>(in einem neuen Fenster)</em>
+        edit: Event bearbeiten
+        delete: Event löschen
+      sortable_list:
+        current_events: Aktuelle Events
+        upcoming_events: Zukünftige Events
+        archived_events: Archivierte Events
+    event_categories:
+      index:
+        title: Eventkategorie
+        create_new: Neue Eventkategorie
+        reorder: Eventkategorien verwalten
+        reorder_done: Eventkategorien wurden angeordnet.
+        sorry_no_results: Keine Ergebnisse gefunden
+        no_items_yet: Es gibt noch keine Eventkategorien. Klicke auf "Neue Eventkategorie" um die erste hinzuzufügen.
+        manage_events: Events verwalten
+      event_category:
+        view_live_html: Diese Eventkategorie anzeigen <br/><em>(in einem neuen Fenster)</em>
+        edit: Event Kategorie bearbeiten
+        delete: Diese Event Kategorie löschen
+  events:
+    index:
+      archives: Archiv
+    show:
+    sidebar:
+      other: Andere Events
