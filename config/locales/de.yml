@@ -41,5 +41,16 @@ de:
     index:
       archives: Archiv
     show:
+      start_at: Beginn
+      end_at: Ende
+      venue_name: Ort
+      venue_address: Adresse
+      ticket_price: Preis
+      ticket_link: Anmeldung
+      previous: Vorheriges Event
+      next: Nächstes Event
     sidebar:
       other: Andere Events
+      categories: Kategorien
+      subscribe_rss: Abonieren
+      archives: Archiv

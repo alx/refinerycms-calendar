@@ -41,5 +41,16 @@ en:
     index:
       archives: Archives
     show:
+      start_at: Starts
+      end_at: Ends
+      venue_name: Location
+      venue_address: Address
+      ticket_price: Ticket Price
+      ticket_link: Ticket Link
+      previous: Previous
+      next: Next
     sidebar:
       other: Other Events
+      categories: Categories
+      subscribe_rss: Subscribe
+      archives: Archives

@@ -16,19 +16,19 @@
 	<% end -%>
 	
 	<section class="start_end">
-		<p>Starts:<br/>
-		<%= event.start_at.strftime('%b %e, %Y %l:%M %p') %></p>
-		<p>Ends:<br/>
-		<%= event.end_at.strftime('%b %e, %Y %l:%M %p') %></p>
+		<p><%=t 'events.show.start_at' %>:<br/>
+		<%=l event.start_at %></p>
+		<p><%=t 'events.show.end_at' %>:<br/>
+		<%=l event.end_at %></p>
   </section><!-- .start_end -->
 
   <section class="venue">
-		<p>Location:<br/>
+		<p><%=t 'events.show.venue_name' %>:<br/>
 		<%= event.venue_name %></p>
   </section>
 
   <section class="address">
-		<p>Address:<br/>
+		<p><%=t 'events.show.venue_address' %>:<br/>
       <%= event.venue_address %>
     </p>
   </section>
@@ -36,14 +36,14 @@
 <% unless archive -%>
 	<% unless event.ticket_price.blank? -%>
 	  <section class="price">
-	    <p>Ticket Price:<br/>
+	    <p><%=t 'events.show.ticket_price' %>:<br/>
 	      <%=number_to_currency event.ticket_price %>
 	    </p>
 	  </section>
 	<% end -%>
 	<% unless event.ticket_link.blank? -%>
 	  <section class="ticket">
-	    <p>Ticket Link:<br/>
+	    <p><%=t 'events.show.ticket_link' %>:<br/>
 	      <%=auto_link event.ticket_link %>
 	    </p>
 	  </section>
@@ -71,12 +71,12 @@
   <nav id="prevnext_nav">
 		<% if event.prev.present? -%>
 		  <%= link_to event_path(event.prev), :class => "prev button" do -%>
-  			<h3>Previous</h3>
+  			<h3><%=t '.previous' %></h3>
   			<h4><%=truncate event.prev.title, :length => 38 %></h4>
   		<% end -%>
 	  <% else -%>
   	  <span class="prev disabled">
-  	    <h3>Previous</h3>
+  	    <h3><%=t 'events.show.previous' %></h3>
 				<h4>&nbsp;</h4>
   	  </span>
 	  <% end -%>
@@ -93,7 +93,7 @@
   		<% end -%>
     <% else -%>
   	  <span class="next disabled">
-  	    <h3>Next</h3>
+  	    <h3><%=t 'events.show.next' %></h3>
 				<h4>&nbsp;</h4>
   	  </span>
 	  <% end -%>
